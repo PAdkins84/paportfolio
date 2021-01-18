@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #d0a6ff;
 }
 
@@ -9,20 +9,8 @@ html,
 body {
   margin: 0;
   background-color: #d0a6ff;
+  color: #4b4453;
   font-family: "Goldman", cursive;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.icon {
-  display: none;
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 .containerStyle {
@@ -38,8 +26,8 @@ a:hover {
   list-style: none;
   background: #d0a6ff;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .navBar li {
@@ -52,7 +40,7 @@ a:hover {
 }
 
 .navBar a {
-  color: white;
+  color: #fef6ff;
 }
 
 .navBar a:hover {
@@ -60,23 +48,37 @@ a:hover {
   color: black;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black !important;
+}
+
+.icon {
+  display: block;
+}
+
 .projects {
   display: -ms-grid;
   display: grid;
   grid-gap: 1.7rem;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1, 3);
+  grid-template-columns: repeat(3, 1);
 }
 
 .proj {
   width: 100%;
-  border: 2px solid cornflowerblue;
+  border: 2px solid #fef6ff;
   max-height: 180px;
 }
 
 .projects.img:hover {
   opacity: 0.5;
-  border-color: cornflowerblue;
+  border-color: #fef6ff;
 }
 
 .btn {
@@ -87,6 +89,25 @@ a:hover {
 }
 
 .btn:hover {
-  background: cornflowerblue;
+  background: #fef6ff;
+}
+
+.blogImg {
+  width: 300px;
+  border: 2px solid #fef6ff;
+  max-height: 180px;
+}
+
+.h3Style {
+  color: #fef6ff;
+}
+
+.contactStyle {
+  margin: 0 auto;
+  width: 60rem;
+}
+
+.custLink {
+  color: #fef6ff;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,9 @@
 
     
 $primary-color: #d0a6ff
+$secondary-color: #4B4453
+$off-white: #FEF6FF
+$cream: #FFFADE
 
 *
   box-sizing: border-box
@@ -11,22 +14,15 @@ html,
 body
   margin: 0
   background-color: $primary-color
+  color: $secondary-color
   font-family: "Goldman", cursive
-
-a
-  color: inherit
-  text-decoration: none
-
-.icon
-  display: none
-
-a:hover
-  text-decoration: none
 
 .containerStyle
   text-align: center
   margin-top: 5rem
   letter-spacing: 2px
+
+// Nav Styles
 
 .navBar
   display: flex
@@ -43,7 +39,7 @@ a:hover
 
 .navBar
   a
-    color: white
+    color: $off-white
 
 .navBar
   a:hover
@@ -52,20 +48,36 @@ a:hover
 
 
 
+a
+  color: inherit
+  text-decoration: none
+
+a:hover
+  text-decoration: none
+  color: black !important
+
+
+
+
+.icon
+  display: block
+
+
+
 
 .projects
   display: grid
   grid-gap: 1.7rem
-  grid-template-columns: repeat(3, 1fr)
+  grid-template-columns: repeat(3, 1)
 
 .proj
   width: 100%
-  border: 2px solid cornflowerblue
+  border: 2px solid $off-white
   max-height: 180px
 
 .projects.img:hover
   opacity: 0.5
-  border-color: cornflowerblue
+  border-color: $off-white
 
 .btn
   display: inline-block
@@ -74,4 +86,19 @@ a:hover
   margin-bottom: 0.3rem
 
 .btn:hover
-  background: cornflowerblue
+  background: $off-white
+
+.blogImg
+  width: 300px
+  border: 2px solid $off-white
+  max-height: 180px
+
+.h3Style
+  color: $off-white
+
+.contactStyle
+  margin: 0 auto
+  width: 60rem
+
+.custLink
+  color: $off-white

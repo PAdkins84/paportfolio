@@ -1,10 +1,11 @@
 import React from 'react';
+import Posts from '../components/Posts'
 import Layout from '../components/Layout';
 
 const Blog = () => {
     return (
         <Layout>
-            <h1 className="mt-5">BLOG</h1>
+            <Posts />
         </Layout>
     )
 }

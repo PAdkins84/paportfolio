@@ -13,7 +13,7 @@ const Header = () => {
                     <li><Link to="/projects">portfolio</Link></li>
                     <li><Link to="/contact">contact</Link></li>
                     <li><Link to="/blog">blog</Link></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <li><a href="javascript:void(0);" class="icon" onClick="myFunction()">
                     <FontAwesomeIcon icon={faBars} />
                     </a></li>
                 </ul>

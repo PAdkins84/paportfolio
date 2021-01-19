@@ -8,7 +8,7 @@ const Footer = () => {
                 <FontAwesomeIcon size="2x" icon={['fab', 'linkedin']} />
                 <FontAwesomeIcon size="2x" className="ml-3" icon={['fab', 'github']} />
                 <FontAwesomeIcon size="2x" className="ml-3" icon={['fab', 'youtube']} />
-                <p className="mb-1">Peter Adkins © 2021</p>
+                <p className="mb-1">Peter Adkins © {(new Date().getFullYear())}</p>
             </div>
         </footer>
     )

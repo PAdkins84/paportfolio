@@ -11,12 +11,15 @@ const IndexPage = () => {
   return (
       <Layout>
         <React.Fragment>
-            <div className="introText col-md-12">
-                <h1 className="myName"><span className="cust">P</span>eter <span className="cust">A</span>dkins</h1>
-                <h3>Front-End Developer</h3>
-                <span className="col-sm-6"><i className="fas fa-envelope mr-1"></i><a className="custLink" href="https://padkins.dev">adkins_peter@hotmail.com</a></span>
-                <span className="col-sm-6"><i className="fas fa-mobile-alt mr-1"></i><a className="custLink" href="https://padkins.dev">07926619158</a></span>
-                <hr />
+          <div class="pAdkins">
+              <h1 id="myName"><span class="cust">P</span>eter <span class="cust">A</span>dkins</h1>
+              <h3 id="webDev">Front-end Developer</h3>
+            </div>
+            <div class="introText">
+            <div class="row">
+                <div class="col-md-6"><i class="fas fa-envelope"><a class="custLink" href="#"> adkins_peter@hotmail.com</a></i></div>
+                <div class="col-md-6"><i class="fas fa-mobile-alt"><a class="custLink" href="#"> 07926619158</a></i></div>
+              </div>
             </div>
           </React.Fragment>
       </Layout>

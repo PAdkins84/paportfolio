@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import '../styles/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Particles from 'react-particles-js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/pro-regular-svg-icons';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -67,6 +69,7 @@ const particleOptions = {
 const Layout = (props) => {
     return (
         <div className="containerStyle container contentStyle">
+                    <a className="menuIcon"><FontAwesomeIcon icon={faBars} /></a>
             <Link to="/"><img class="logo" src={require('../images/icon.png')} /></Link>
             <div onClick={dayNightMode} class="toggle"></div>
             <Particles

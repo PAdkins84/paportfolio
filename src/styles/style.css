@@ -23,6 +23,18 @@ body {
   height: 35px;
 }
 
+.menuIcon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+.menuIcon:hover {
+  opacity: 0.5;
+}
+
 /* Toggle Day & Night Mode */
 .toggle {
   position: absolute;
@@ -181,6 +193,12 @@ a:hover {
   .projects {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+  .hideNav {
+    display: none;
+  }
+  .logo {
+    left: 50% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

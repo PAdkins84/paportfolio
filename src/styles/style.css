@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #d0a6ff;
-  color: #4B4453;
+  color: #4b4453;
   font-family: "Goldman", cursive !important;
 }
 
@@ -11,7 +11,7 @@ html,
 body {
   margin: 0;
   background-color: #d0a6ff;
-  color: #4B4453;
+  color: #4b4453;
   font-family: "Goldman", cursive !important;
 }
 
@@ -41,7 +41,7 @@ body {
   top: 10px;
   right: 10px;
   background: #f8f9fa;
-  border: 2px solid #4B4453;
+  border: 2px solid #4b4453;
   width: 30px;
   height: 20px;
   cursor: pointer;
@@ -51,7 +51,7 @@ body {
 }
 
 .toggle.active {
-  background: #4B4453;
+  background: #4b4453;
   border: 2px solid #f8f9fa;
 }
 
@@ -62,7 +62,7 @@ body {
   left: 0;
   width: 16px;
   height: 16px;
-  background: #4B4453;
+  background: #4b4453;
   border-radius: 50%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -95,8 +95,8 @@ body {
   list-style: none;
   background: #d0a6ff;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .navBar li {
@@ -109,7 +109,7 @@ body {
 }
 
 .navBar a {
-  color: #FEF6FF;
+  color: #fef6ff;
 }
 
 .navBar a:hover {
@@ -143,19 +143,19 @@ a:hover {
   display: -ms-grid;
   display: grid;
   grid-gap: 1.7rem;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr, 3);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .proj {
   width: 100%;
-  border: 2px solid #FEF6FF;
+  border: 2px solid #fef6ff;
   max-height: 180px;
 }
 
 .projects.img:hover {
   opacity: 0.5;
-  border-color: #FEF6FF;
+  border-color: #fef6ff;
 }
 
 .btn {
@@ -166,17 +166,17 @@ a:hover {
 }
 
 .btn:hover {
-  background: #FEF6FF;
+  background: #fef6ff;
 }
 
 .blogImg {
   width: 300px;
-  border: 2px solid #FEF6FF;
+  border: 2px solid #fef6ff;
   max-height: 180px;
 }
 
 .h3Style {
-  color: #FEF6FF;
+  color: #fef6ff;
   font-size: 1.5rem;
 }
 
@@ -186,13 +186,13 @@ a:hover {
 }
 
 .custLink {
-  color: #FEF6FF;
+  color: #fef6ff;
 }
 
 @media only screen and (max-width: 792px) {
   .projects {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .hideNav {
     display: none;

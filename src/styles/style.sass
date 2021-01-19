@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap")
 
+
+$medium: 792px
     
 $primary-color: #d0a6ff
 $secondary-color: #4B4453
@@ -9,13 +11,64 @@ $cream: #FFFADE
 *
   box-sizing: border-box
   background-color: $primary-color
+  color: $secondary-color
+  font-family: "Goldman", cursive !important
 
 html,
 body
   margin: 0
   background-color: $primary-color
   color: $secondary-color
-  font-family: "Goldman", cursive
+  font-family: "Goldman", cursive !important
+
+.logo
+  position: absolute
+  left: 10px
+  top: 5px
+  width: 35px
+  height: 35px
+
+/* Toggle Day & Night Mode */
+
+.toggle
+  position: absolute
+  top: 10px
+  right: 10px
+  background: #f8f9fa
+  border: 2px solid #4B4453
+  width: 30px
+  height: 20px
+  cursor: pointer
+  border-radius: 20px
+  transition: 0.5s
+
+
+.toggle.active
+  background: #4B4453
+  border: 2px solid #f8f9fa
+
+.toggle:before
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  width: 16px
+  height: 16px
+  background: #4B4453
+  border-radius: 50%
+  transition: 0.5s
+
+.toggle.active:before
+  left: 10px
+  background: #f8f9fa
+
+.particles
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  z-index: -1
 
 .containerStyle
   text-align: center
@@ -62,13 +115,18 @@ a:hover
 .icon
   display: block
 
-
+.footer 
+  position: fixed
+  left: 0
+  bottom: 0
+  width: 100%
+  text-align: center
 
 
 .projects
   display: grid
   grid-gap: 1.7rem
-  grid-template-columns: repeat(3, 1)
+  grid-template-columns: repeat(3, 1fr)
 
 .proj
   width: 100%
@@ -95,6 +153,7 @@ a:hover
 
 .h3Style
   color: $off-white
+  font-size: 1.5rem
 
 .contactStyle
   margin: 0 auto
@@ -102,3 +161,9 @@ a:hover
 
 .custLink
   color: $off-white
+
+// Mobile responsive
+
+@media only screen and (max-width: $medium)
+    .projects 
+        grid-template-columns: 1fr

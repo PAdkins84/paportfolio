@@ -24,11 +24,14 @@
     "@sanity/client": "^2.1.4",
     "bootstrap": "^4.5.3",
     "gatsby": "^2.26.1",
+    "gatsby-plugin-manifest": "^2.10.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^16.13.1",
+    "react-particles-js": "^3.4.1",
     "react-router-dom": "^5.2.0",
-    "sass": "^1.32.4"
+    "sass": "^1.32.4",
+    "sharp": "^0.27.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"

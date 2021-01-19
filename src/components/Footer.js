@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => {
     return (
-        <footer>
-            <div className="footer fixed-bottom mb-0">
+        <footer className="mt-2">
+            <div className="footer fixed-bottommb-0">
                 <FontAwesomeIcon size="2x" icon={['fab', 'linkedin']} />
                 <FontAwesomeIcon size="2x" className="ml-3" icon={['fab', 'github']} />
                 <FontAwesomeIcon size="2x" className="ml-3" icon={['fab', 'youtube']} />

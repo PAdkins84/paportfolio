@@ -52,7 +52,7 @@ const Projects = () => {
                 </div>
                 <div className="item">
                     <a href="https://padkins.dev">
-                    <img className="proj" src={require('../images/bff.png')} alt="Square Off Game" />
+                    <img className="proj" src={require('../images/techstop.png')} alt="Square Off Game" />
                     <a href="https://padkins.dev" className="btn-light">
                         <i className="fas fa-eye"></i> View Project
                     </a>
@@ -63,7 +63,7 @@ const Projects = () => {
                 </div>
                 <div className="item">
                     <a href="https://padkins.dev">
-                    <img className="proj" src={require('../images/squareOff.png')} alt="Square Off Game" />
+                    <img className="proj" src={require('../images/beats13.png')} alt="Square Off Game" />
                     <a href="https://padkins.dev" className="btn-light">
                         <i className="fas fa-eye"></i> View Project
                     </a>
@@ -75,7 +75,7 @@ const Projects = () => {
             </section>
 
             <section className="downloadCV mt-5">
-                <h1><a className="dlLink" href="https://padkins.dev"><i class="fas fa-cloud-download-alt"></i>Download my CV</a></h1>
+                <button className=""><a className="dlLink" href="https://padkins.dev"><i class="fas fa-cloud-download-alt"></i>Download my CV</a></button>
             </section>
           </React.Fragment>
         </Layout>

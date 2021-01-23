@@ -25,6 +25,7 @@ a {
   top: 5px;
   width: 35px;
   height: 35px;
+  z-index: 9999;
 }
 
 .menuIcon {
@@ -52,6 +53,7 @@ a {
   border-radius: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  z-index: 9999;
 }
 
 .toggle.active {

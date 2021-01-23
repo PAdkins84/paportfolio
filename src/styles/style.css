@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #d0a6ff;
-  color: #4B4453;
+  color: #4b4453;
   font-family: "Goldman", cursive !important;
 }
 
@@ -11,12 +11,12 @@ html,
 body {
   margin: 0;
   background-color: #d0a6ff;
-  color: #4B4453;
+  color: #4b4453;
   font-family: "Goldman", cursive !important;
 }
 
 a {
-  color: #4B4453 !important;
+  color: #4b4453 !important;
 }
 
 .logo {
@@ -45,7 +45,7 @@ a {
   top: 10px;
   right: 10px;
   background: #f8f9fa;
-  border: 2px solid #4B4453;
+  border: 2px solid #4b4453;
   width: 30px;
   height: 20px;
   cursor: pointer;
@@ -55,7 +55,7 @@ a {
 }
 
 .toggle.active {
-  background: #4B4453;
+  background: #4b4453;
   border: 2px solid #f8f9fa;
 }
 
@@ -66,7 +66,7 @@ a {
   left: 0;
   width: 16px;
   height: 16px;
-  background: #4B4453;
+  background: #4b4453;
   border-radius: 50%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -99,8 +99,8 @@ a {
   list-style: none;
   background: #d0a6ff;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .navBar li {
@@ -113,7 +113,7 @@ a {
 }
 
 .navBar a {
-  color: #FEF6FF;
+  color: #fef6ff;
 }
 
 .navBar a:hover {
@@ -147,19 +147,19 @@ a:hover {
   display: -ms-grid;
   display: grid;
   grid-gap: 1.7rem;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr, 3);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .proj {
   width: 100%;
-  border: 2px solid #FEF6FF;
+  border: 2px solid #fef6ff;
   max-height: 180px;
 }
 
 .projects.img:hover {
   opacity: 0.5;
-  border-color: #FEF6FF;
+  border-color: #fef6ff;
 }
 
 .btn {
@@ -170,17 +170,17 @@ a:hover {
 }
 
 .btn:hover {
-  background: #FEF6FF;
+  background: #fef6ff;
 }
 
 .blogImg {
   width: 300px;
-  border: 2px solid #FEF6FF;
+  border: 2px solid #fef6ff;
   max-height: 180px;
 }
 
 .h3Style {
-  color: #FEF6FF;
+  color: #fef6ff;
   font-size: 1.5rem;
 }
 
@@ -190,13 +190,13 @@ a:hover {
 }
 
 .custLink {
-  color: #FEF6FF;
+  color: #fef6ff;
 }
 
 @media only screen and (max-width: 792px) {
   .projects {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .hideNav {
     display: none;
@@ -204,7 +204,7 @@ a:hover {
   .logo {
     left: 50% !important;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   div.introText {
     font-size: 16px;
@@ -229,11 +229,12 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 9999;
 }
 
 .menu-bars {
@@ -242,29 +243,32 @@ a:hover {
   top: 0;
   font-size: 2rem;
   background: none;
+  z-index: 9999;
 }
 
 .nav-menu {
-  background-color: #4B4453;
+  background-color: #4b4453;
   width: 250px;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: -100%;
   -webkit-transition: 850ms;
   transition: 850ms;
+  z-index: 9999;
 }
 
 .nav-menu.active {
   left: 0;
   -webkit-transition: 350ms;
   transition: 350ms;
+  z-index: 9999;
 }
 
 .nav-text {
@@ -272,14 +276,15 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 8px 0px 8px 16px;
   list-style: none;
   height: 60px;
+  z-index: 9999;
 }
 
 .nav-text a {
@@ -292,18 +297,21 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 16px;
   border-radius: 4px;
+  z-index: 9999;
 }
 
 .nav-text a:hover {
   background-color: #1a83ff;
+  z-index: 9999;
 }
 
 .nav-menu-items {
   width: 100%;
+  z-index: 9999;
 }
 
 .navbar-toggle {
@@ -313,14 +321,16 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 9999;
 }
 
 span {
-  margin-left: 16pxz;
+  margin-left: 16px;
+  z-index: 9999;
 }
 /*# sourceMappingURL=style.css.map */

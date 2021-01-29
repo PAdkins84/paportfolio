@@ -73,10 +73,6 @@ const Projects = () => {
                     </a>
                 </div>
             </section>
-
-            <section className="downloadCV mt-5">
-                <button className=""><a className="dlLink" href="https://padkins.dev"><i class="fas fa-cloud-download-alt"></i>Download my CV</a></button>
-            </section>
           </React.Fragment>
         </Layout>
     )

@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #d0a6ff;
-  color: #4b4453;
+  color: #4B4453;
   font-family: "Goldman", cursive !important;
 }
 
@@ -11,12 +11,12 @@ html,
 body {
   margin: 0;
   background-color: #d0a6ff;
-  color: #4b4453;
+  color: #4B4453;
   font-family: "Goldman", cursive !important;
 }
 
 a {
-  color: #4b4453 !important;
+  color: #4B4453 !important;
 }
 
 .logo {
@@ -46,7 +46,7 @@ a {
   top: 10px;
   right: 10px;
   background: #f8f9fa;
-  border: 2px solid #4b4453;
+  border: 2px solid #4B4453;
   width: 30px;
   height: 20px;
   cursor: pointer;
@@ -57,7 +57,7 @@ a {
 }
 
 .toggle.active {
-  background: #4b4453;
+  background: #4B4453;
   border: 2px solid #f8f9fa;
 }
 
@@ -68,7 +68,7 @@ a {
   left: 0;
   width: 16px;
   height: 16px;
-  background: #4b4453;
+  background: #4B4453;
   border-radius: 50%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -91,7 +91,12 @@ a {
 .containerStyle {
   text-align: center;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   letter-spacing: 2px;
+}
+
+.btn-dark {
+  color: #FEF6FF !important;
 }
 
 .navBar {
@@ -101,8 +106,8 @@ a {
   list-style: none;
   background: #d0a6ff;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navBar li {
@@ -115,7 +120,7 @@ a {
 }
 
 .navBar a {
-  color: #fef6ff;
+  color: #FEF6FF;
 }
 
 .navBar a:hover {
@@ -145,23 +150,31 @@ a:hover {
   text-align: center;
 }
 
+p.toFront {
+  background: #d0a6ff00;
+}
+
+.footer.toFront {
+  z-index: 1 !important;
+}
+
 .projects {
   display: -ms-grid;
   display: grid;
   grid-gap: 1.7rem;
-  -ms-grid-columns: (1fr, 3);
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .proj {
   width: 100%;
-  border: 2px solid #fef6ff;
+  border: 2px solid #FEF6FF;
   max-height: 180px;
 }
 
 .projects.img:hover {
   opacity: 0.5;
-  border-color: #fef6ff;
+  border-color: #FEF6FF;
 }
 
 .btn {
@@ -172,17 +185,17 @@ a:hover {
 }
 
 .btn:hover {
-  background: #fef6ff;
+  background: #FEF6FF;
 }
 
 .blogImg {
   width: 300px;
-  border: 2px solid #fef6ff;
+  border: 2px solid #FEF6FF;
   max-height: 180px;
 }
 
 .h3Style {
-  color: #fef6ff;
+  color: #FEF6FF;
   font-size: 1.5rem;
 }
 
@@ -192,13 +205,13 @@ a:hover {
 }
 
 .custLink {
-  color: #fef6ff;
+  color: #FEF6FF;
 }
 
 @media only screen and (max-width: 792px) {
   .projects {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .hideNav {
     display: none;
@@ -206,7 +219,7 @@ a:hover {
   .logo {
     left: 50% !important;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   div.introText {
     font-size: 16px;
@@ -231,11 +244,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 9999;
 }
 
@@ -249,15 +262,15 @@ a:hover {
 }
 
 .nav-menu {
-  background-color: #4b4453;
+  background-color: #4B4453;
   width: 250px;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: fixed;
   top: 0;
   left: -100%;
@@ -278,11 +291,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 8px 0px 8px 16px;
   list-style: none;
   height: 60px;
@@ -299,16 +312,17 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 16px;
   border-radius: 4px;
   z-index: 9999;
 }
 
 .nav-text a:hover {
-  background-color: #1a83ff;
+  border: solid #4B4453 2px;
   z-index: 9999;
+  text-decoration: none;
 }
 
 .nav-menu-items {
@@ -323,11 +337,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 9999;
 }
 

@@ -88,7 +88,11 @@ a
 .containerStyle
   text-align: center
   margin-top: 5rem
+  margin-bottom: 5rem
   letter-spacing: 2px
+
+.btn-dark
+  color: $off-white !important
 
 // Nav Styles
 
@@ -136,6 +140,12 @@ a:hover
   bottom: 0
   width: 100%
   text-align: center
+
+p.toFront
+  background: #d0a6ff00
+
+.footer.toFront
+  z-index: 1 !important
 
 
 .projects
@@ -256,8 +266,9 @@ a:hover
   z-index: 9999
 
 .nav-text a:hover
-  background-color: #1a83ff
+  border: solid $secondary-color 2px
   z-index: 9999
+  text-decoration: none
 
 .nav-menu-items
   width: 100%
